@@ -1,9 +1,0 @@
-# Sets default values for dependency configruations
-parameters:
-    net_galley_api_client.auth.key: ~
-    net_galley_api_client.auth.secret: ~
-    net_galley_api_client.auth.user: ~
-    net_galley_api_client.oauth.client: ~
-    net_galley_api_client.oauth.secret: ~
-    net_galley_api_client.options.test_domain: ~
-    net_galley_api_client.options.test_mode: ~
