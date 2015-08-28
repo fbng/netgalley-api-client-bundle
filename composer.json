@@ -5,7 +5,7 @@
     "license": "MIT",
     "keywords": ["NetGalley", "netgalley", "firebrand", "fbng", "api", "client"],
     "require": {
-        "fbng/netgalley-api-client": "~2.1",
+        "fbng/netgalley-api-client": "~2.1"
     },
     "require-dev": {
     },
