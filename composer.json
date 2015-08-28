@@ -1,0 +1,16 @@
+{
+    "name": "fbng/netgalley-api-client-bundle",
+    "description": "NetGalley API Client Bundle",
+    "homepage": "https://github.com/fbng/netgalley-api-client-bundle",
+    "license": "MIT",
+    "keywords": ["NetGalley", "netgalley", "firebrand", "fbng", "api", "client"],
+    "require": {
+        "fbng/netgalley-api-client": "~2.1",
+    },
+    "require-dev": {
+    },
+    "type": "library",
+    "autoload": {
+        "psr-0": {"NetGalley": "lib/"}
+    }
+}

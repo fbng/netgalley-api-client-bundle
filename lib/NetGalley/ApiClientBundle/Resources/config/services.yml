@@ -1,0 +1,11 @@
+services:
+    netgalley_api_client:
+        class: NetGalley\Api\Client
+        arguments: [ %net_galley_api_client.auth.user%, %net_galley_api_client.auth.key%, %net_galley_api_client.auth.secret%, %net_galley_api_client.options.test_mode% ]
+        calls:
+            - [ setTestDomain, [ %net_galley_api_client.options.test_domain% ] ]
+    netgalley_oauth_client:
+        class: NetGalley\Api\OauthClient
+        arguments: [ %net_galley_api_client.oauth.client%, %net_galley_api_client.oauth.secret%, ~, %net_galley_api_client.options.test_mode% ]
+        calls:
+            - [ setTestDomain, [ %net_galley_api_client.options.test_domain% ] ]
