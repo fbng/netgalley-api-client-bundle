@@ -21,6 +21,7 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->arrayNode('auth')
+                    ->addDefaultsIfNotSet()
                     ->children()
                         ->scalarNode('key')->defaultNull()->end()
                         ->scalarNode('secret')->defaultNull()->end()
@@ -28,12 +29,14 @@ class Configuration implements ConfigurationInterface
                     ->end()
                 ->end() // end auth
                 ->arrayNode('oauth')
+                    ->addDefaultsIfNotSet()
                     ->children()
                         ->scalarNode('client')->defaultNull()->end()
                         ->scalarNode('secret')->defaultNull()->end()
                     ->end()
                 ->end() // end auth
                 ->arrayNode('options')
+                    ->addDefaultsIfNotSet()
                     ->children()
                         ->scalarNode('test_domain')->defaultNull()->end()
                         ->scalarNode('test_mode')->defaultNull()->end()
