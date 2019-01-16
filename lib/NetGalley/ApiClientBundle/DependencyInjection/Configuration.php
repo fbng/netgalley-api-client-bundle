@@ -15,8 +15,12 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('net_galley_api_client');
+        $treeBuilder = new TreeBuilder('net_galley_api_client');
+
+        $rootNode = method_exists($treeBuilder, 'getRootNode')
+            ? $treeBuilder->getRootNode()
+            : $treeBuilder->root('net_galley_api_client')
+        ;
 
         $rootNode
             ->children()
