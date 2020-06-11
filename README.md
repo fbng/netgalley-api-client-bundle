@@ -81,6 +81,7 @@ $client = $this->get('netgalley_api_client');
 
 // to authenticate by Oauth2 client
 $client = $this->get('netgalley_oauth_client');
+$client->requestToken();
 
 // make an API request; see the relevant documentation
 // for details of the API you are requesting; here we
