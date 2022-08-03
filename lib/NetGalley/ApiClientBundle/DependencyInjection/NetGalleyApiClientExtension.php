@@ -35,7 +35,7 @@ class NetGalleyApiClientExtension extends Extension
     /**
      * {@inheritDoc}
      */
-    public function getAlias()
+    public function getAlias(): string
     {
         return 'net_galley_api_client';
     }
